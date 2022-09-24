@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "electronic-equipment-borrowing": {
+      "hosting": {
+        "finalproject": [
+          "electronic-equipment-borrowing"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "electronic-equipment-borrowing"
+  }
+}
