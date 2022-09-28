@@ -3,7 +3,9 @@
         <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
         <mat-icon *ngIf="sidenav.opened">close</mat-icon>
     </button>
+    <div routerLink="/dashboard" class="header" style="cursor: pointer;">
     Electric Devices Borrowing Website
+    </div>
     <button mat-button (click)="logout()">
         <mat-icon>logout</mat-icon>
         Logout
@@ -11,7 +13,7 @@
 </mat-toolbar>
 <mat-sidenav-container>
     <mat-sidenav #sidenav="matSidenav">
-        <img width="100" height="100" class="avatar mat-elevation-z8" src="assets/image/logoproject.png">
+        <img width="100" height="100" class="avatar mat-elevation-z8" src="assets/image/logoproject.png" >
         <h4 class="name">EDBW Company</h4>
         <mat-divider></mat-divider>
         <button mat-button class="menu-button" routerLink="/dashboard/home">
