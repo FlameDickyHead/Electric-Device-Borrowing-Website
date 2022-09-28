@@ -34,10 +34,4 @@ export class DashboardComponent implements OnInit {
         }
     });
   }
-  home() {
-    this.router.navigate(['/dashboard']);
-  }
-  employee(){
-    this.router.navigate(['/dashboard']);
-  }
 }

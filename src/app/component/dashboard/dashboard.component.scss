@@ -16,13 +16,10 @@ mat-sidenav {
 }
 .content {
     height: calc(100vh - 98px);
+    
     margin: 16px;
-    margin-left: 32px;
+    margin-left: 27px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: lightgrey;
     border-radius: 10px;
 }
 mat-sidenav-container {

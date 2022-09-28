@@ -16,18 +16,43 @@ import { StatusComponent } from './page/status/status.component';
 const routes: Routes = [
   {path: '', redirectTo:'login', pathMatch:'full'},
   {path: 'login', component : LoginComponent},
-  {path: 'dashboard', component : DashboardComponent},
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    children: [
+      {
+        path: 'home',
+        component: HomeComponent,
+      },
+      {
+        path: 'employee',
+        component: EmployeeComponent,
+      },
+      {
+        path: 'borrow-device',
+        component: BorrowComponent,
+      },
+      {
+        path: 'return-device',
+        component: ReturnComponent,
+      },
+      {
+        path: 'status-table',
+        component: StatusComponent,
+      },
+      {
+        path: 'about-us',
+        component: AboutUsComponent,
+      },
+      {
+        path: 'help',
+        component: HelpComponent,
+      },
+    ],
+  },
   {path: 'register', component : RegisterComponent},
   {path: 'forgot-password', component : ForgotPasswordComponent},
   {path: 'verify-email', component : VerifyEmailComponent},
-  {path: 'home', component : HomeComponent },
-  {path: 'employee', component : EmployeeComponent},
-  {path: 'borrow-device', component : BorrowComponent},
-  {path: 'return-device', component : ReturnComponent},
-  {path: 'status-table', component : StatusComponent},
-  {path: 'about-us', component : AboutUsComponent},
-  {path: 'help', component : HelpComponent},
-  
 ];
 
 @NgModule({
