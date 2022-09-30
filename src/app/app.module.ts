@@ -28,6 +28,7 @@ import { ReturnComponent } from './page/return/return.component';
 import { StatusComponent } from './page/status/status.component';
 import { AboutUsComponent } from './page/about-us/about-us.component';
 import { HelpComponent } from './page/help/help.component';
+import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,7 +59,8 @@ import { HelpComponent } from './page/help/help.component';
     MatSidenavModule,
     MatButtonModule,
     MatIconModule,
-    MatDividerModule
+    MatDividerModule,
+    MdbCarouselModule
   
   ],
   providers: [],
