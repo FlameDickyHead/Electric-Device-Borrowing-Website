@@ -1,1 +1,67 @@
-<p>electric works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="box1">
+            <div class="card border-0 shadow p-3">
+                <div class="form-floating mb-3 tetx-center">
+                    <h5 class="text-center">Add Electronic Device</h5>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="Electronic_Id" name="Electronic_Id" [(ngModel)]="electronic_id">
+                    <label for="Electronic_Id">Electronic ID</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="electronicName" name="electronicname" [(ngModel)]="electronic_name">
+                    <label for="electronicName">Electronic Device Name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="e_Brand" name="brand" [(ngModel)]="e_brand">
+                    <label for="e_Brand">Electronic Brand</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" name="email" [(ngModel)]="e_model">
+                    <label for="email">Electronic Model</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="phone" name="phone" [(ngModel)]="serial_number">
+                    <label for="phone">Serial Number</label>
+                </div>
+            
+                <button type="button" class="btn btn-outline-success" (click)="addElectronic()">Add Electronic Device</button>
+            </div>
+            <div class="box2">
+                <div></div>
+                <div class="card p-3 shadow ">
+                    <h5 class="text-center"> Electronic Device List</h5>
+                    <div class="card-body">
+                        <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col">Electronic Id</th>
+                                <th scope="col">Electronic name</th>
+                                <th scope="col">Electronic brand</th>
+                                <th scope="col">Electronic model</th>
+                                <th scope="col">Serial Number</th>
+                                <th scope="col">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr *ngFor="let electronic of electronicsList">
+                                <td >{{electronic.electronic_id}}</td>
+                                <td >{{electronic.electronic_name}}</td>
+                                <td>{{electronic.e_brand}}</td>
+                                <td>{{electronic.e_model}}</td>
+                                <td>{{electronic.serial_number}}</td>    
+                                <td>
+                                    <button class="btn btn-outline-danger" (click)="deleteElectronic(electronic)">Delete</button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    </div>
+    

@@ -71,7 +71,7 @@ export class EmployeeComponent implements OnInit {
 
   }
   updateEmployee() {
-
+    
   }
   deleteEmployee(employee: Employee) {
       if(window.confirm('Are you sure to delete ' + employee.first_name +' '+ employee.last_name + '?')) {
