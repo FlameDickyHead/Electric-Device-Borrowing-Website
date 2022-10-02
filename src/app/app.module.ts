@@ -14,6 +14,7 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { VerifyEmailComponent } from './component/verify-email/verify-email.component';
 import { ForgotPasswordComponent } from './component/forgot-password/forgot-password.component';
 import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -29,6 +30,7 @@ import { StatusComponent } from './page/status/status.component';
 import { AboutUsComponent } from './page/about-us/about-us.component';
 import { HelpComponent } from './page/help/help.component';
 import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
+import { ElectricComponent } from './page/electric/electric.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -43,7 +45,8 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
     ReturnComponent,
     StatusComponent,
     AboutUsComponent,
-    HelpComponent
+    HelpComponent,
+    ElectricComponent
   ],
   imports: [
     BrowserModule,
@@ -52,6 +55,7 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
     provideFirestore(() => getFirestore()),
+    
     AngularFireModule.initializeApp(environment.firebase),
     FormsModule,
     BrowserAnimationsModule,
@@ -61,6 +65,7 @@ import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
     MatIconModule,
     MatDividerModule,
     MdbCarouselModule
+    
   
   ],
   providers: [],

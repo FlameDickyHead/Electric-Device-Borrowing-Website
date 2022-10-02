@@ -1,1 +1,68 @@
-<p>employee works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="box1">
+            <div class="card border-0 shadow p-3">
+                <div class="form-floating mb-3 tetx-center">
+                    <h5 class="text-center">Add Employee</h5>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="firstName" name="firstname" [(ngModel)]="first_name">
+                    <label for="firstname">First name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="lastName" name="lastName" [(ngModel)]="last_name">
+                    <label for="lastName">Last name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email">
+                    <label for="email">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="phone" name="phone" [(ngModel)]="phone_number">
+                    <label for="phone">Phone Number</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="department" name="department" [(ngModel)]="department">
+                    <label for="department">Department</label>
+                </div>
+                <button type="button" class="btn btn-outline-success" (click)="addEmployee()">Add Employee</button>
+            </div>
+        </div>
+        <div class="box2" >
+            <h5 class="text-center"> Employee List</h5>
+            <div class="card p-3 shadow">
+                <div class="card-body">
+                    <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            
+                            <th scope="col">First name</th>
+                            <th scope="col">Last name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">Department</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let employee of employeesList">
+                            <td >{{employee.first_name}}</td>
+                            <td>{{employee.last_name}}</td>
+                            <td>{{employee.email}}</td>
+                            <td>{{employee.phone_number}}</td>
+                            <td>{{employee.department}}</td>
+                            <td>
+                                <button class="btn btn-outline-danger" (click)="deleteEmployee(employee)">Delete</button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+

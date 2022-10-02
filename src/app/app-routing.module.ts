@@ -7,6 +7,7 @@ import { RegisterComponent } from './component/register/register.component';
 import { VerifyEmailComponent } from './component/verify-email/verify-email.component';
 import { AboutUsComponent } from './page/about-us/about-us.component';
 import { BorrowComponent } from './page/borrow/borrow.component';
+import { ElectricComponent } from './page/electric/electric.component';
 import { EmployeeComponent } from './page/employee/employee.component';
 import { HelpComponent } from './page/help/help.component';
 import { HomeComponent } from './page/home/home.component';
@@ -47,6 +48,10 @@ const routes: Routes = [
       {
         path: 'help',
         component: HelpComponent,
+      },
+      {
+        path: 'electric',
+        component: ElectricComponent,
       },
     ],
   },
