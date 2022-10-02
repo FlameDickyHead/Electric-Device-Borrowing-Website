@@ -12,6 +12,7 @@ export class EmployeeComponent implements OnInit {
   employeesList : Employee[] = [];
   employeeObj : Employee = {
     id: '',
+    employee_id: '',
     first_name: '',
     last_name: '',
     phone_number: '',
@@ -19,6 +20,7 @@ export class EmployeeComponent implements OnInit {
     department: ''
   };
   id : string = '';
+  employee_id : string = '';
   first_name : string = '';
   last_name : string = '';
   phone_number: string = '';
@@ -33,6 +35,7 @@ export class EmployeeComponent implements OnInit {
   }
   resetForm(){
   this.id  = '';
+  this.employee_id = '';
   this.first_name  = '';
   this.last_name  = '';
   this.phone_number = '';
@@ -53,10 +56,11 @@ export class EmployeeComponent implements OnInit {
     })
   }
   addEmployee() {
-    if(this.first_name == ''|| this.last_name == ''|| this.phone_number == '' || this.email =='' || this.department == '') {
+    if(this.employee_id == '' || this.first_name == ''|| this.last_name == ''|| this.phone_number == '' || this.email =='' || this.department == '') {
       alert('Fill all input fields');
     }
     this.employeeObj.id = '';
+    this.employeeObj.employee_id = this.employee_id;
     this.employeeObj.email = this.email;
     this.employeeObj.first_name = this.first_name;
     this.employeeObj.last_name = this.last_name;
