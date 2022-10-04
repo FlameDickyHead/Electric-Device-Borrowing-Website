@@ -29,8 +29,8 @@ import { ReturnComponent } from './page/return/return.component';
 import { StatusComponent } from './page/status/status.component';
 import { AboutUsComponent } from './page/about-us/about-us.component';
 import { HelpComponent } from './page/help/help.component';
-import { MdbCarouselModule } from 'mdb-angular-ui-kit/carousel';
 import { ElectricComponent } from './page/electric/electric.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +46,9 @@ import { ElectricComponent } from './page/electric/electric.component';
     StatusComponent,
     AboutUsComponent,
     HelpComponent,
-    ElectricComponent
+    ElectricComponent,
+   
+   
   ],
   imports: [
     BrowserModule,
@@ -64,7 +66,7 @@ import { ElectricComponent } from './page/electric/electric.component';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
-    MdbCarouselModule
+    
     
   
   ],

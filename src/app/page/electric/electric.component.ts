@@ -73,4 +73,9 @@ export class ElectricComponent implements OnInit {
       this.data.deleteElectronic(electronic);
       }
   }
+  search(value: string) {
+    console.log(value);
+  }
 }
+
+

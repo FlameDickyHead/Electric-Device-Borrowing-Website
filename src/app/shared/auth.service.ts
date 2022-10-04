@@ -14,9 +14,9 @@ export class AuthService {
         localStorage.setItem('token','true');
 
         if(res.user?.emailVerified == true) {
-          this.router.navigate(['/dashboard']);
+          this.router.navigate(['/dashboard/home']);
         } else {
-          this.router.navigate(['/dashboard']);
+          this.router.navigate(['/dashboard/home']);
         }
 
     }, err => {

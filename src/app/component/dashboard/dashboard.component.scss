@@ -1,11 +1,11 @@
 mat-toolbar {
-    background: #313F6B;
+    background: #002b5c;
     color: white;
     justify-content: space-between;
     
 }
 .header {
-    background: #313F6B;
+    background: #002b5c;
     color: white;
     justify-content: space-between;
 }
@@ -20,8 +20,8 @@ mat-sidenav {
     text-align: center;
 }
 .content {
-    height: calc(100vh - 98px);
-    
+    height: calc(120vh - 90px);
+    width: auto;
     margin: 16px;
     margin-left: 27px;
     display: flex;

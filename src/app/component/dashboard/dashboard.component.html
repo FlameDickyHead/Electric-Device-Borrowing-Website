@@ -3,7 +3,7 @@
         <mat-icon *ngIf="!sidenav.opened">menu</mat-icon>
         <mat-icon *ngIf="sidenav.opened">close</mat-icon>
     </button>
-    <div routerLink="/dashboard" class="header" style="cursor: pointer;">
+    <div  class="header" style="cursor: pointer;" routerLink="/dashboard/home">
     Electric Devices Borrowing Website
     </div>
     <button mat-button (click)="logout()">
@@ -38,7 +38,7 @@
         </button>
         <button mat-button class="menu-button" routerLink="/dashboard/status-table">
             <mat-icon>list_alt</mat-icon>
-            <span>Status Tables</span>
+            <span>Stock Status</span>
         </button>
         <br /><br /><br />
         <mat-divider></mat-divider>
