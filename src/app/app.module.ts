@@ -30,6 +30,7 @@ import { StatusComponent } from './page/status/status.component';
 import { AboutUsComponent } from './page/about-us/about-us.component';
 import { HelpComponent } from './page/help/help.component';
 import { ElectricComponent } from './page/electric/electric.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -66,6 +67,8 @@ import { ElectricComponent } from './page/electric/electric.component';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
+    MatDialogModule
+    
     
     
   

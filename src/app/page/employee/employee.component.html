@@ -1,16 +1,39 @@
 <div class="container-fluid">
+  
+    <div class="row">
+        <div class="box1">
+            <div class="card border-0 shadow p-3">
+                <div class="form-floating mb-3 tetx-center">
+                    <h5 class="text-center">Add Employee</h5>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="Employee_Id" name="Employee_Id" [(ngModel)]="employee_id">
+                    <label for="Employee_Id">Employee ID</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="firstName" name="firstname" [(ngModel)]="first_name">
+                    <label for="firstname">First name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="lastName" name="lastName" [(ngModel)]="last_name">
+                    <label for="lastName">Last name</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email">
+                    <label for="email">Email address</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="phone" name="phone" [(ngModel)]="phone_number">
+                    <label for="phone">Phone Number</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="department" name="department" [(ngModel)]="department">
+                    <label for="department">Department</label>
+                </div>
+                <button type="button" class="btn btn-outline-success" (click)="addEmployee()">Add Employee</button>
+            </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" >Employee Management System</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <button class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#addEmployee" type="button">Add Employee</button>
-          </div>
-        </div>
-    </nav>
+
     <div class="box2" >
         <div class="card p-3 shadow">
             <h5 class="text-center">Employee List</h5>
@@ -42,52 +65,10 @@
                       </tr>
                     </tbody>
                   </table>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Add Employee Modal -->
-<div class="modal fade" id="addEmployee" tabindex="-1"  aria-labelledby="addEmployee" aria-hidden="true">
-<div class="modal-dialog">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h1 class="modal-title fs-5" id="exampleModalLabel">Add Employee</h1>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-        <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="Employee_Id" name="Employee_Id" [(ngModel)]="employee_id">
-            <label for="Employee_Id">Employee ID</label>
-        </div>
-        <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="firstName" name="firstname" [(ngModel)]="first_name">
-            <label for="firstname">First name</label>
-        </div>
-        <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="lastName" name="lastName" [(ngModel)]="last_name">
-            <label for="lastName">Last name</label>
-        </div>
-        <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="email" name="email" [(ngModel)]="email">
-            <label for="email">Email address</label>
-        </div>
-        <div class="form-floating mb-3">
-            <input type="tel" class="form-control" id="phone" name="phone" [(ngModel)]="phone_number">
-            <label for="phone">Phone Number</label>
-        </div>
-        <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="department" name="department" [(ngModel)]="department">
-            <label for="department">Department</label>
-        </div>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      <button type="button" class="btn btn-primary" (click)="addEmployee()">Save changes</button>
-    </div>
-  </div>
-</div>
+                </div>
 </div>
 
 
-    
+
+
+  
