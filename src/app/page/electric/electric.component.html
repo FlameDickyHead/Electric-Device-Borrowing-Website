@@ -10,6 +10,10 @@
                     <label for="Electronic_Id">Electronic ID</label>
                 </div>
                 <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="Electronic_Id" name="Electronic_Id" [(ngModel)]="document_id">
+                    <label for="Electronic_Id">Document ID</label>
+                </div>
+                <div class="form-floating mb-3">
                     <input type="text" class="form-control" id="electronicName" name="electronicname" [(ngModel)]="electronic_name">
                     <label for="electronicName">Electronic Device Name</label>
                 </div>
@@ -37,6 +41,7 @@
                             <thead>
                               <tr>
                                 <th scope="col">Electronic Id</th>
+                                <th scope="col">Document Id</th>
                                 <th scope="col">Electronic name</th>
                                 <th scope="col">Electronic brand</th>
                                 <th scope="col">Electronic model</th>
@@ -47,6 +52,7 @@
                             <tbody>
                               <tr *ngFor="let electronic of electronicsList">
                                 <td >{{electronic.electronic_id}}</td>
+                                <td >{{electronic.document_id}}</td>
                                 <td >{{electronic.electronic_name}}</td>
                                 <td>{{electronic.e_brand}}</td>
                                 <td>{{electronic.e_model}}</td>

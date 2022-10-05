@@ -16,7 +16,8 @@ export class ElectricComponent implements OnInit {
     electronic_name: '',
     e_brand: '',
     e_model: '',
-    serial_number: ''
+    serial_number: '',
+    document_id: ''
   };
   id : string = '';
   electronic_id : string = '';
@@ -24,6 +25,7 @@ export class ElectricComponent implements OnInit {
   e_brand: string = '';
   e_model: string = '';
   serial_number : string = '';
+  document_id: string ='';
 
 
   constructor(private data : DataService) { }
@@ -38,6 +40,7 @@ export class ElectricComponent implements OnInit {
     this.e_brand = '';
     this.e_model = '';
     this.serial_number ='';
+    this.document_id = '';
     }
   getAllElectronic() {
     this.data.getAllElectronic().subscribe(res => {
@@ -51,11 +54,12 @@ export class ElectricComponent implements OnInit {
     })
   }
   addElectronic() {
-    if(this.electronic_id == '' || this.electronic_name == ''|| this.e_brand == ''|| this.e_model == '' || this.serial_number =='') {
+    if(this.electronic_id == '' || this.document_id == '' || this.electronic_name == ''|| this.e_brand == ''|| this.e_model == '' || this.serial_number =='') {
       alert('Fill all input fields');
     }
     this.electronicObj.id = '';
     this.electronicObj.electronic_id = this.electronic_id;
+    this.electronicObj.document_id = this.document_id;
     this.electronicObj.electronic_name = this.electronic_name;
     this.electronicObj.e_brand = this.e_brand;
     this.electronicObj.e_model = this.e_model;
