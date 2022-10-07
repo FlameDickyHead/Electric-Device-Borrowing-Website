@@ -1,14 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap');
+
 .fh5co-section {
     margin-top: 30px;
     text-align: justify;
+    font-family: 'Inter Tight', sans-serif;
+
 }
 .col-md-8 {
     margin-left: 200px;
+    font-family: 'Inter Tight', sans-serif;
+   
 }
 .ourmission{
-   
+    font-family: 'Inter Tight', sans-serif;
     margin-top: 30px
 }
 .col-md-6 {
     margin-top: 30px;
+    font-family: 'Inter Tight', sans-serif;
+}
+h1{
+    font-family: 'Inter Tight', sans-serif;
+}
+mat-divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-top-width: 1px;
+}
+.mat-divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border-top-width: 0.5px;
 }

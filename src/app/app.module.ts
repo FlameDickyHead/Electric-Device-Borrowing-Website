@@ -48,6 +48,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     AboutUsComponent,
     HelpComponent,
     ElectricComponent,
+    
    
    
   ],
@@ -67,7 +68,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
-    MatDialogModule
+    MatDialogModule,
+   
     
     
     
